@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Praticascreem.View.MostrarUsuarios" BackgroundColor="white">
+    <ContentPage.Content>
+        <StackLayout Margin="0,30,0,0">
+            <Label Text="Lista de Usuarios" FontSize="25"
+                  TextColor="Green"
+                  HorizontalOptions="CenterAndExpand"/>
+            <ListView ItemsSource="{Binding ListViewSource}" HasUnevenRows="True" IsPullToRefreshEnabled="True" IsRefreshing="{Binding IsRefreshing}" x:Name="ListViewName">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Email}"/>
+                                <Label Text="{Binding Password}"/>
+                                <Label Text="{Binding Nombre}"/>
+                                <Label Text="{Binding Edad}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <StackLayout Margin="30" VerticalOptions="CenterAndExpand">
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
