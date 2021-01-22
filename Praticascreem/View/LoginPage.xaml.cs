@@ -19,10 +19,9 @@ namespace Praticascreem.View
         }
 
 
-        private void Limpiarcampos_Cliked(object sender, EventArgs e) {
+        private  async void Registrar_Cliked(object sender, EventArgs e) {
 
-            EmailTxt.Text = string.Empty;
-            PasswordTxt.Text = string.Empty;
+            await Navigation.PushAsync(new RegisterPage());
 
 
         }

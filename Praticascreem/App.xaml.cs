@@ -35,7 +35,7 @@ namespace Praticascreem
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new  View.CambiarContraseña());
+            MainPage = new NavigationPage(new  View.LoginPage());
         }
 
         protected override void OnStart()

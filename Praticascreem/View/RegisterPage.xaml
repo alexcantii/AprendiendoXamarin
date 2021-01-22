@@ -5,7 +5,8 @@
              x:Class="Praticascreem.View.RegisterPage">
     <ContentPage.Content>
         <ScrollView>
-        <Frame BorderColor="#FDFEFE " CornerRadius="5" Padding="18" Margin="30">
+            
+        <Frame>
 
             <StackLayout  BackgroundColor="#ffffff"  HorizontalOptions="CenterAndExpand" Padding="10">
                 

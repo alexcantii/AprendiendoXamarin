@@ -5,41 +5,37 @@
     <ContentPage.Content>
 
 
-        <Frame BorderColor="#FDFEFE " CornerRadius="5" Padding="10" Margin="15">
+        <Frame>
 
             <StackLayout BackgroundColor="#ffffff">
+                
+                
+                <Label Text="Login" HorizontalOptions="Center" Padding="40" FontSize="Large"/>
 
+                <Image Source="Usuario" WidthRequest="120" BackgroundColor="Transparent"></Image>
 
-                <Image Source="logo" WidthRequest="300" BackgroundColor="Transparent"></Image>
+            
 
-
-
-                <Label Text="Digite su usuario y Password" HorizontalOptions="Center" Padding="40" FontSize="Medium"/>
-
-                <Grid Margin="10,0" VerticalOptions="CenterAndExpand">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="2*"/>
-
-                    </Grid.ColumnDefinitions>
-                    
-                  
-
-
-                    <Label Grid.Row="0" Grid.Column="0" Text="Email" VerticalOptions="Center"/>
-
-                    <Entry x:Name="EmailTxt" Grid.Row="0" Grid.Column="1" Keyboard="Email" Placeholder="sample@email.com" FontSize="15" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <Label Text="Digite su Usuario y Contraseña" HorizontalOptions="Center" Padding="40" FontSize="Medium"/>
 
 
 
-                    <Label Grid.Row="1" Grid.Column="0" Text="Password" VerticalOptions="Center"/>
-
-                    <Entry x:Name="PasswordTxt" Grid.Row="1" Grid.Column="1" IsPassword="True" Placeholder="*************" FontSize="15" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                <StackLayout>
 
 
+                    <Label Text="Email" VerticalOptions="Center"/>
 
-                </Grid>
+                    <Entry x:Name="EmailTxt" Keyboard="Email" Placeholder="sample@email.com" FontSize="15" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
+
+
+                    <Label Text="Password" VerticalOptions="Center"/>
+
+                    <Entry x:Name="PasswordTxt" IsPassword="True" Placeholder="*************" FontSize="15" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+
+
+                </StackLayout>
 
                 <ActivityIndicator IsRunning="{Binding IsRunnigTxt}" 
                                    IsVisible="{Binding IsVisbleTxt}"
@@ -50,9 +46,9 @@
                 </ActivityIndicator>
 
 
-                <StackLayout Orientation="Horizontal" Margin="60,0" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" Margin="30,0" VerticalOptions="CenterAndExpand">
 
-                    <CheckBox HorizontalOptions="Start" VerticalOptions="Center" Color="#767677"/>
+                    <CheckBox HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Color="#767677"/>
                     <Label Text="Remember me" TextColor="#767677" HorizontalOptions="FillAndExpand"  FontSize="13" FontAttributes="Bold" />
                     <Label  Text="Forgot Your Password?" HorizontalOptions="FillAndExpand" TextColor="#007bff">
                         <Label.GestureRecognizers>
@@ -68,7 +64,7 @@
 
                 <StackLayout Margin="30.0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
                     <Button Command="{Binding LoginCommand}"  Text="Login" BorderRadius="23"  Background="#17a2b8" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt}" TextColor="white" HeightRequest="46"></Button>
-                    <Button  Text="Borrar" BorderRadius="23"  Background="#007bff" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt2}"   TextColor="white" HeightRequest="46" Clicked="Limpiarcampos_Cliked"></Button>
+                    <Button  Text="Registrar" BorderRadius="23"  Background="#007bff" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt2}"   TextColor="white" HeightRequest="46" Clicked="Registrar_Cliked"></Button>
 
 
                 </StackLayout>

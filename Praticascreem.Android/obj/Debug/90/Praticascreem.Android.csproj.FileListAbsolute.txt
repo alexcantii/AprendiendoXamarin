@@ -57,6 +57,7 @@ C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\r
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\bulckmatic.png
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\xml\file_paths.xml
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\logo.jpg
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\usuario.png
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\uploadflags.txt
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\resolvedassemblies.hash
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\android\assets\CommonServiceLocator.dll
