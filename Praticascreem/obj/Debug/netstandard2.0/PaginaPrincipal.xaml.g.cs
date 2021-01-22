@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Praticascreem.Paginaprincipal.xaml", "Paginaprincipal.xaml", typeof(global::Praticascreem.Paginaprincipal))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Praticascreem.PaginaPrincipal.xaml", "PaginaPrincipal.xaml", typeof(global::Praticascreem.PaginaPrincipal))]
 
 namespace Praticascreem {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Paginaprincipal.xaml")]
-    public partial class Paginaprincipal : global::Xamarin.Forms.Shell {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("PaginaPrincipal.xaml")]
+    public partial class PaginaPrincipal : global::Xamarin.Forms.Shell {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Paginaprincipal));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PaginaPrincipal));
         }
     }
 }

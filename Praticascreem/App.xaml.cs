@@ -35,7 +35,7 @@ namespace Praticascreem
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new  Paginaprincipal());
+            MainPage = new NavigationPage(new  Starpage());
         }
 
         protected override void OnStart()

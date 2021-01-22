@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TuU5lql9/Uq1zUy1h7AmM0ktPgwm3XOTmuMa0uiE69qzrgZE4+lsK8LT6Ca9RvJTzimWIRBxf0kDfoCq6le6Fw==",
+  "dgSpecHash": "jbBkLP2B7loWmHvIVgdg58JrtKQLOew8ddmn4LwFkrb3c/HOqZ0D6skWt2hOjqdwGvvPkul7n6vKWhoUh7INZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Praticascreem\\Praticascreem.Android\\Praticascreem.Android.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,6 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\sqlite-net\\1.6.292\\sqlite-net.1.6.292.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlite.net-pcl\\3.1.1\\sqlite.net-pcl.3.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlite.net.core-pcl\\3.1.1\\sqlite.net.core-pcl.3.1.1.nupkg.sha512",

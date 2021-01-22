@@ -55,7 +55,7 @@
                         BorderRadius="20" HorizontalOptions="FillAndExpand" Command="{Binding RegisterCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
 
                     <Button Text="Actualizar Datos" Background="#007bff" TextColor="White"
-                        BorderRadius="20" HorizontalOptions="FillAndExpand"  IsEnabled="{Binding IsEnabledTxt}" Clicked="LimpiarDatos_Cliked"/>
+                        BorderRadius="20" HorizontalOptions="FillAndExpand"  IsEnabled="{Binding IsEnabledTxt}" Clicked="Actualizar_Cliked"/>
                 </StackLayout>
 
 

@@ -47,7 +47,7 @@ namespace Praticascreem.View
         }
 
        
-        private void LimpiarDatos_Cliked(object sender, EventArgs e)
+        private void Actualizar_Cliked(object sender, EventArgs e)
         {
 
             //EmailEntry.Text = string.Empty;
