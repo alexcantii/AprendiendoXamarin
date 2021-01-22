@@ -557,3 +557,5 @@ C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\s
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\editar.png
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\remove.png
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\usericon.png
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\gradiente.jpg

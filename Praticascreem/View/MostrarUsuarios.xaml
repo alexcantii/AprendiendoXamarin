@@ -23,13 +23,7 @@
                     
                 </Grid.RowDefinitions>
                
-                <Label Text="User Profile" Grid.Row="0" FontAttributes="Bold" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
-
-                <StackLayout Grid.Row="1">
-                   
-                    <Button x:Name="btnSkillPopup" Text="Add Skill"></Button>
-               
-                </StackLayout>
+           
 
                 <Grid Grid.Row = "2" VerticalOptions="CenterAndExpand" Margin="10" Padding="10">
 
