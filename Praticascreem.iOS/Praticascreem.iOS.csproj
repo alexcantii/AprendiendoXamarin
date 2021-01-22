@@ -159,4 +159,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\gradiente.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_action_build.png" />
+  </ItemGroup>
 </Project>

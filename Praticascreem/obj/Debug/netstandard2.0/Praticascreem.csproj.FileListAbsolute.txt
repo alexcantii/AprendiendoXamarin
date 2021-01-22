@@ -19,3 +19,7 @@ C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\ref\Praticascreem.dll
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\Praticascreem.pdb
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\Praticascreem.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\HeaderContentView.xaml.g.cs
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\Pagina1.xaml.g.cs
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\Pagina2.xaml.g.cs
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\Paginaprincipal.xaml.g.cs
