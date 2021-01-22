@@ -161,7 +161,7 @@ namespace Praticascreem.ViewModel
           
             var user = new User
             {
-                
+               
                 Email = Emailtxt.ToLower(),
                 Password = Passwordtxt.ToLower(),
                 Nombre = Nombretxt.ToLower(),
@@ -172,17 +172,8 @@ namespace Praticascreem.ViewModel
 
 
 
-            if (user.Id == 0)
-            {
+            await App.Database.SaveUserAsync(user);
 
-                await Application.Current.MainPage.DisplayAlert("Usuario no encontrado", "ok", "Aceptar");
-
-                await Application.Current.MainPage.Navigation.PushAsync(new EditarPage());
-
-                return ;
-            }
-
-         
 
             await Application.Current.MainPage.DisplayAlert("Datos Actualizados", "Bien echo" + nombre.ToString(), "Acectar");
 

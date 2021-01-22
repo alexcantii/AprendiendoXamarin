@@ -28,13 +28,13 @@
 
                     <Label Grid.Row="0" Grid.Column="0" Text="Email" VerticalOptions="Center"/>
 
-                    <Entry Grid.Row="0" Grid.Column="1" Keyboard="Email" Placeholder="sample@email.com" FontSize="15" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                    <Entry x:Name="EmailTxt" Grid.Row="0" Grid.Column="1" Keyboard="Email" Placeholder="sample@email.com" FontSize="15" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
 
 
                     <Label Grid.Row="1" Grid.Column="0" Text="Password" VerticalOptions="Center"/>
 
-                    <Entry Grid.Row="1" Grid.Column="1" IsPassword="True" Placeholder="*************" FontSize="15" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+                    <Entry x:Name="PasswordTxt" Grid.Row="1" Grid.Column="1" IsPassword="True" Placeholder="*************" FontSize="15" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
 
 
@@ -54,7 +54,12 @@
 
                     <CheckBox HorizontalOptions="Start" VerticalOptions="Center" Color="#767677"/>
                     <Label Text="Remember me" TextColor="#767677" HorizontalOptions="FillAndExpand"  FontSize="13" FontAttributes="Bold" />
-                    <Label  Text="Forgot Your Password?" HorizontalOptions="FillAndExpand" TextColor="#007bff"></Label>
+                    <Label  Text="Forgot Your Password?" HorizontalOptions="FillAndExpand" TextColor="#007bff">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGesturecognizer_Tapped">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
 
 
 
@@ -63,7 +68,7 @@
 
                 <StackLayout Margin="30.0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
                     <Button Command="{Binding LoginCommand}"  Text="Login" BorderRadius="23"  Background="#17a2b8" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt}" TextColor="white" HeightRequest="46"></Button>
-                    <Button  Text="Register" BorderRadius="23"  Background="#007bff" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt2}"   TextColor="white" HeightRequest="46" Clicked="Registrar_Cliked"></Button>
+                    <Button  Text="Borrar" BorderRadius="23"  Background="#007bff" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt2}"   TextColor="white" HeightRequest="46" Clicked="Limpiarcampos_Cliked"></Button>
 
 
                 </StackLayout>

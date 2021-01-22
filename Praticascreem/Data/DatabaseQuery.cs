@@ -72,11 +72,7 @@ namespace Praticascreem.Data
 
         }
 
-        //public async Task<User> GetAllUserAsync(User user)
-        //{
-        //    return await _database.GetAsync<User>(user.Id);
-        //}
-
+      
 
         public Task<List<User>> GetAllUserAsync()
         {

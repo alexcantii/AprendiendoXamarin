@@ -19,10 +19,21 @@ namespace Praticascreem.View
         }
 
 
-        private void Registrar_Cliked(object sender, EventArgs e) {
+        private void Limpiarcampos_Cliked(object sender, EventArgs e) {
 
-            Navigation.PushAsync(new RegisterPage());
-        
+            EmailTxt.Text = string.Empty;
+            PasswordTxt.Text = string.Empty;
+
+
         }
+
+
+
+        private async void TapGesturecognizer_Tapped(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new CambiarContraseña());
+        }
+
     }
 }

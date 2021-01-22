@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Praticascreem.View.CambiarContraseña">
+    <ContentPage.Content>
+
+        <Frame>
+            <StackLayout BackgroundColor="#ffffff">
+
+
+
+                <Image Source="bulckmatic" WidthRequest="300"></Image>
+
+
+
+
+                <Label Text="Cambiar contraseña" HorizontalOptions="Center" FontSize="Large" Padding="40"></Label>
+
+
+
+                <StackLayout>
+                    <Label  Text="Email" VerticalOptions="Center"/>
+                    <Entry x:Name="EmailEntry"  Keyboard="Email" Placeholder="sample@email.com" FontSize="15" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+                    <Label Text="Password" VerticalOptions="Center"/>
+
+                    <Entry x:Name="PasswordEntry"  IsPassword="True" Placeholder="*************" FontSize="15" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+
+
+                </StackLayout>
+                <StackLayout Margin="1">
+
+                </StackLayout>
+
+
+
+
+                <!--<ActivityIndicator IsRunning="{Binding IsRunnigTxt}" 
+                                   IsVisible="{Binding IsVisbleTxt}"
+                                    IsEnabled="{Binding IsEnableTxt}"
+                                   Scale="0.8"
+                                   Color="#B4995D">
+
+                </ActivityIndicator>-->
+
+
+
+
+
+                <StackLayout Margin="30.0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Button Command="{Binding ActualizarContraseñaCommand}"  Text="ACTUALIZAR" BorderRadius="23"  Background="#17a2b8" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt}" TextColor="white" HeightRequest="46"></Button>
+                 
+
+
+                </StackLayout>
+
+
+            </StackLayout>
+
+
+
+        </Frame>
+
+    </ContentPage.Content>
+</ContentPage>
