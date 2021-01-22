@@ -150,4 +150,10 @@
       <Name>Praticascreem</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\editar.png" />
+  </ItemGroup>
 </Project>

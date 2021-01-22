@@ -35,7 +35,7 @@ namespace Praticascreem
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new  View.LoginPage());
+            MainPage = new NavigationPage(new  View.MostrarUsuarios());
         }
 
         protected override void OnStart()
