@@ -111,15 +111,15 @@ namespace Praticascreem.ViewModel
 
 
 
-            if (user.Id == 0)
-            {
+            //if (user.Id == 0)
+            //{
 
-                await Application.Current.MainPage.DisplayAlert("Usuario no encontrado", "ok", "Aceptar");
+            //    await Application.Current.MainPage.DisplayAlert("Usuario no encontrado", "ok", "Aceptar");
 
-                await Application.Current.MainPage.Navigation.PushAsync(new EditarPage());
+            //    await Application.Current.MainPage.Navigation.PushAsync(new EditarPage());
 
-                return;
-            }
+            //    return;
+           //}
 
             await App.Database.SaveUserAsync(user);
 
