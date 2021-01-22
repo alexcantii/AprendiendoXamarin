@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Praticascreem.HeaderContentView.xaml", "HeaderContentView.xaml", typeof(global::Praticascreem.HeaderContentView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Praticascreem.HeaderContentView.xaml", "HeaderContentView.xaml", typeof(global::Praticascreem.HeaderContentview))]
 
 namespace Praticascreem {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("HeaderContentView.xaml")]
-    public partial class HeaderContentView : global::Xamarin.Forms.ContentView {
+    public partial class HeaderContentview : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HeaderContentView));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HeaderContentview));
         }
     }
 }
