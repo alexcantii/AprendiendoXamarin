@@ -4,6 +4,7 @@ using Praticascreem.Data;
 using Praticascreem.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Praticascreem.View.MasterDetail;
 
 namespace Praticascreem
 {
@@ -35,7 +36,8 @@ namespace Praticascreem
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new  Paginaprincipal());
+            MainPage = new NavigationPage(new MymasterDetailPage());
+           // MainPage = new  NavigationPage(new  LoginPage());
         }
 
         protected override void OnStart()

@@ -1,0 +1,9 @@
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\build-signature\signature
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\optimized\
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\Praticascreem.iOS.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.iOS\obj\iPhone\Debug\Praticascreem.iOS.csproj.CoreCompileInputs.cache
