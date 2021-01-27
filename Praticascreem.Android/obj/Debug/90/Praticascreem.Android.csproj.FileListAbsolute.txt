@@ -580,3 +580,4 @@ C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\s
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\insertarimagen.png
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem.Android\obj\Debug\90\res\drawable\camara.png

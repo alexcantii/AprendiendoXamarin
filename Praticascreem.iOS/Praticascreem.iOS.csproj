@@ -174,4 +174,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\insertarimagen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\camara.png" />
+  </ItemGroup>
 </Project>

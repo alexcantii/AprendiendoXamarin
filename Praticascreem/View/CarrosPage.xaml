@@ -45,7 +45,7 @@
 
                 <Label Text="TOMAR FOTOGRAFIA" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
                 <Image x:Name="Photo"/>
-                <Button x:Name="btnTomarFoto" Text="Tomar Foto" Clicked="btnTomarFoto_Clicked"/>
+                <Button  ImageSource="camara.png" WidthRequest="40" HeightRequest="40" BackgroundColor="Transparent" x:Name="btnTomarFoto" Text="Tomar Foto" Clicked="btnTomarFoto_Clicked"/>
 
                 <Image x:Name="photoseleccionar"/>
 
