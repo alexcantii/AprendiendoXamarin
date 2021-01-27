@@ -37,8 +37,8 @@
                        <ColumnDefinition Width="90*"/>
 
                     </Grid.ColumnDefinitions>
-                   
-                    <Image Source="user.png" Grid.Row="0" Grid.Column="0"/>
+
+                    <Image Source="usericon.png" Grid.Row="0" Grid.Column="0"/>
 
                     <Entry x:Name="EmailTxt" Keyboard="Email" Placeholder="sample@email.com"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" FontSize="15" VerticalOptions="Center" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
                    

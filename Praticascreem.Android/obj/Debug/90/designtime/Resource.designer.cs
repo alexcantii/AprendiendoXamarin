@@ -8553,10 +8553,7 @@ namespace Praticascreem.Droid
 			public const int tooltip_frame_light = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int user = 2131165340;
-			
-			// aapt resource value: 0x7F07009D
-			public const int usericon = 2131165341;
+			public const int usericon = 2131165340;
 			
 			// aapt resource value: 0x7F07001F
 			public const int Usuario = 2131165215;

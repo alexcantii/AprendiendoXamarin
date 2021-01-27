@@ -36,7 +36,7 @@ namespace Praticascreem
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Starpage());
+            MainPage = new NavigationPage(new MymasterDetailPage());
            // MainPage = new  NavigationPage(new  LoginPage());
         }
 

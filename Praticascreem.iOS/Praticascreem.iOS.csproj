@@ -165,4 +165,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_action_build.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\contrasena.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\user.png" />
+  </ItemGroup>
 </Project>

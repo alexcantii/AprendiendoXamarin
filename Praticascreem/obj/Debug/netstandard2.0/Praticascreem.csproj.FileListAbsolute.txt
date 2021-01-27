@@ -2,11 +2,11 @@ C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\bin\Debug\netstandard2
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\bin\Debug\netstandard2.0\Praticascreem.dll
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\bin\Debug\netstandard2.0\ref\Praticascreem.dll
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\bin\Debug\netstandard2.0\Praticascreem.pdb
+C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\Praticascreem.csprojAssemblyReference.cache
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\View\CambiarContraseña.xaml.g.cs
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\View\CarrosPage.xaml.g.cs
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\View\EditarPage.xaml.g.cs
-C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\View\Ejecutarmostrar.xaml.g.cs
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\View\MasterDetail\MymasterDetailPage.xaml.g.cs
 C:\Users\Usuario\source\repos\Praticascreem\Praticascreem\obj\Debug\netstandard2.0\View\MasterDetail\MymasterDetailPageDetail.xaml.g.cs

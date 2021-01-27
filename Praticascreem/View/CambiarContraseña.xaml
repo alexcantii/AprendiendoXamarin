@@ -1,42 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Praticascreem.View.CambiarContraseña">
+              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              mc:Ignorable="d"
+             x:Class="Praticascreem.View.CambiarContraseña" BackgroundColor="White"
+               Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout
+          Orientation="Horizontal"
+          VerticalOptions="Center"
+          Spacing="10">
+            
+            <Label
+               Text="Cambiar Contraseña"
+               FontSize="18"
+               TextColor="White"
+               VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
 
-        <Frame>
-            <StackLayout BackgroundColor="#ffffff">
+        
+
+        <StackLayout Margin="30.0" Padding="0">
+            <StackLayout>
+
+                <Label Text="CAMBIAR CONTRASEÑA" HorizontalOptions="Center" Padding="40"  FontSize="23" FontAttributes="Bold"/>
+
+                <Image Source="Usuario" WidthRequest="200" BackgroundColor="Transparent"></Image>
+
+                <Label Text="Digite su Usuario y Contraseña" HorizontalOptions="Center" Padding="20" FontSize="Medium"/>
+            </StackLayout>
 
 
-
-                <Image Source="Usuario" WidthRequest="200"></Image>
-
+            <Grid>
 
 
-
-                <Label Text="Cambiar contraseña" HorizontalOptions="Center" FontSize="Large" Padding="40"></Label>
-
-
-
-                <StackLayout>
-                    <Label  Text="Email" VerticalOptions="Center"/>
-                    <Entry x:Name="EmailEntry"  Keyboard="Email" Placeholder="sample@email.com" FontSize="15" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-
-                    <Label Text="Password" VerticalOptions="Center"/>
-
-                    <Entry x:Name="PasswordEntry"  IsPassword="True" Placeholder="*************" FontSize="15" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-
-
-
-                </StackLayout>
-                <StackLayout Margin="1">
-
-                </StackLayout>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
 
 
 
 
-                <!--<ActivityIndicator IsRunning="{Binding IsRunnigTxt}" 
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+
+
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="90*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Image Source="usericon.png" Grid.Row="0" Grid.Column="0"/>
+
+                <Entry x:Name="EmailTxt" Keyboard="Email" Placeholder="sample@email.com"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" FontSize="15" VerticalOptions="Center" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+            </Grid>
+
+
+
+
+            <Grid>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="90*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="contrasena.jpg" Grid.Row="0" Grid.Column="0"/>
+
+                <Entry  x:Name="PasswordTxt" IsPassword="True" Placeholder="*************"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" VerticalOptions="Center" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+            </Grid>
+
+
+
+
+
+
+            <!--<ActivityIndicator IsRunning="{Binding IsRunnigTxt}" 
                                    IsVisible="{Binding IsVisbleTxt}"
                                     IsEnabled="{Binding IsEnableTxt}"
                                    Scale="0.8"
@@ -48,19 +98,40 @@
 
 
 
-                <StackLayout Margin="30.0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
-                    <Button Command="{Binding ActualizarContraseñaCommand}"  Text="ACTUALIZAR" BorderRadius="23"  Background="#17a2b8" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt}" TextColor="white" HeightRequest="46"></Button>
+
+
+            <StackLayout Margin="30.0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <Button Command="{Binding ActualizarContraseñaCommand}"  Text="ACTUALIZAR" BorderRadius="23"  Background="#17a2b8" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt}" TextColor="white" HeightRequest="46"></Button>
+
+            </StackLayout>
+
+
+
+
+
+        <!--<ActivityIndicator IsRunning="{Binding IsRunnigTxt}" 
+                                   IsVisible="{Binding IsVisbleTxt}"
+                                    IsEnabled="{Binding IsEnableTxt}"
+                                   Scale="0.8"
+                                   Color="#B4995D">
+
+                </ActivityIndicator>-->
+
+
+
+
+
                  
 
 
                 </StackLayout>
 
 
-            </StackLayout>
+           
 
 
 
-        </Frame>
+        
 
     </ContentPage.Content>
 </ContentPage>

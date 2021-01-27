@@ -5,6 +5,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Praticascreem.View.MostrarUsuarios" BackgroundColor="white">
+    <NavigationPage.TitleView>
+        <StackLayout
+          Orientation="Horizontal"
+          VerticalOptions="Center"
+          Spacing="10">
+
+            <Label
+               Text="Mostrar Usuarios"
+               FontSize="18"
+               TextColor="White"
+               VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
 
 
