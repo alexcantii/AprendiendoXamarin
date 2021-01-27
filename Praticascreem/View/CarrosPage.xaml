@@ -17,7 +17,7 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
 
-
+        <ScrollView>
         <Frame>
 
 
@@ -43,24 +43,80 @@
                 <Label Text="Edad"/>
                 <Entry x:Name="EdadTxt" Keyboard="Numeric" Placeholder="Digite su Edad" Text="{Binding EdadTxt}"/>
 
-                <Label Text="TOMAR FOTOGRAFIA" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-                <Image x:Name="Photo"/>
-                <Button  ImageSource="camara.png" WidthRequest="6" HeightRequest="10" BackgroundColor="Transparent" x:Name="btnTomarFoto" Text="Tomar Foto" Clicked="btnTomarFoto_Clicked"/>
-
-                <Image x:Name="photoseleccionar"/>
-
-                <Label Text="INSERTAR IMAGEN" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
-                <Button ImageSource="insertarimagen.png" WidthRequest="40" HeightRequest="40"  x:Name="btnSeleccionarFoto"  BackgroundColor="Transparent" Margin="10" Text="" Clicked="btnSeleccionarFoto_Clicked"/>
 
 
 
 
-                <StackLayout Margin="30">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="70"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="90*"/>
+                        <ColumnDefinition Width="90*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                  
+
+
+                  
+                    <Label Grid.Row="0" Grid.Column="0"  Text="TOMAR FOTOGRAFIA" FontSize="17" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+
+                    <Button  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" ImageSource="camara.png" WidthRequest="40" HeightRequest="40"  BackgroundColor="Transparent" x:Name="btnTomarFoto"  Clicked="btnTomarFoto_Clicked"/>
+
+                </Grid>
+                    <Image x:Name="Photo"/>
+
+
+
+
+                    <Grid>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="70"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+
+                        </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="90*"/>
+                        <ColumnDefinition Width="90*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                    
+                    
+                
+                    
+                    <Label  Grid.Row="0" Grid.Column="0" Text="INSERTAR IMAGEN" FontSize="17" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                    <Button Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" ImageSource="insertarimagen.png" WidthRequest="40" HeightRequest="40"  x:Name="btnSeleccionarFoto"  BackgroundColor="Transparent" Margin="10" Text="" Clicked="btnSeleccionarFoto_Clicked"/>
+
+                    </Grid>
+
+
+
+
+                    <Image Grid.Row="1"  Grid.Column="2" x:Name="photoseleccionar"/>
+
+
+
+
+
+                    <StackLayout Margin="30">
                     <Button Text="Registrar" BackgroundColor="#17a2b8" TextColor="White" BorderRadius="23" HorizontalOptions="FillAndExpand" Command="{Binding RegistroCommand}" Clicked="limpiarEntry_Clicked"/>
                     <Button Text="Limpiar" BackgroundColor="#007bff" TextColor="White" BorderRadius="23" HorizontalOptions="FillAndExpand" Command="{Binding RegistroCommand}" Clicked="limpiarEntry_Clicked" />
                 </StackLayout>
 
             </StackLayout>
         </Frame>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -58,7 +58,7 @@
                 <ActivityIndicator x:Name="indi" IsRunning="False" IsEnabled="False" IsVisible="False"  Color="#FF5733" BackgroundColor="Transparent"></ActivityIndicator>
 
 
-                <StackLayout Margin="30.0" Orientation="Horizontal" VerticalOptions="CenterAndExpand" Padding="0">
+                <StackLayout Margin="30.0">
 
 
 

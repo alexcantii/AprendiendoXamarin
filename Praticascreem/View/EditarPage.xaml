@@ -62,14 +62,12 @@
 
 
 
-                        <Button Text="Gurdar Datos" Background="#17a2b8" TextColor="White"
-                        BorderRadius="20" HorizontalOptions="FillAndExpand" Command="{Binding ActualizarCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
+                        <Button Text="Gurdar Datos" Background="#17a2b8" TextColor="White" 
+                        BorderRadius="20" VerticalOptions="CenterAndExpand" Command="{Binding ActualizarCommand}" IsEnabled="{Binding IsEnabledTxt}"/>
 
                         <Button Text="Limpiar Datos" Background="#007bff" TextColor="White"
                         BorderRadius="20" HorizontalOptions="FillAndExpand"  IsEnabled="{Binding IsEnabledTxt}"/>
                     </StackLayout>
-
-                    <ListView x:Name="listaListView"/>
 
                 </StackLayout>
 

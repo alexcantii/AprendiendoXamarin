@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using Praticascreem.View;
 using Praticascreem.Models;
 using Praticascreem.Data;
+using Praticascreem.View.MasterDetail;
 
 namespace Praticascreem.ViewModel
 {
@@ -127,7 +128,7 @@ namespace Praticascreem.ViewModel
 
             this.IsRunningTxt = true;
             this.IsVisibleTxt = true;
-            this.IsEnabledTxt = false;
+            this.IsEnabledTxt = true;
 
             await Task.Delay(20);
 
@@ -147,12 +148,12 @@ namespace Praticascreem.ViewModel
 
             }
             else if (e.Count > 0) { 
-                await Application.Current.MainPage.Navigation.PushAsync(new CarrosPage());
+                await Application.Current.MainPage.Navigation.PushAsync(new MymasterDetailPage());
              
                 
                 this.IsRunningTxt = false;
                 this.IsVisibleTxt = false;
-                this.IsEnabledTxt = true;
+                this.IsEnabledTxt = false;
             
             }
            
