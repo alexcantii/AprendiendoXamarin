@@ -12,6 +12,8 @@ namespace Praticascreem.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+
+      
         
         [MaxLength(38)]
         public string Email { get; set; }

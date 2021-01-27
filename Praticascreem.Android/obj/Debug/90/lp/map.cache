@@ -8,6 +8,7 @@ SkiaSharp.Views.Android
 SkiaSharp.Views.Forms
 SQLite.Net.Platform.XamarinAndroid
 SQLitePCLRaw.lib.e_sqlite3.android
+Syncfusion.Core.XForms.Android
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common

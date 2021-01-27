@@ -22,16 +22,16 @@ namespace Praticascreem.ViewModel
         public string edad;
         public object listViewSource;
         public bool isRefreshing = false;
-        
+
 
 
         #endregion
 
         public MostrarUsuariosViewModel()
         {
-          
-       
-          LoadData();
+
+
+            LoadData();
         }
 
         #region Properties
@@ -74,7 +74,7 @@ namespace Praticascreem.ViewModel
         {
             get { return isRefreshing; }
 
-            set { SetValue(ref this.isRefreshing,value); }
+            set { SetValue(ref this.isRefreshing, value); }
 
 
         }
@@ -94,14 +94,14 @@ namespace Praticascreem.ViewModel
 
         public async Task LoadData()
         {
-        this.ListViewSource = await App.Database.GetAllUserAsync();
+            this.ListViewSource = await App.Database.GetAllUserAsync();
 
         }
 
 
         #region Command
-         
-       
+
+
 
         #endregion
 

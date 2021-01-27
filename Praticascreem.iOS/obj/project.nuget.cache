@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5HrdJI5o5F3XoHK5sc0mfvrw3AYCjl1i039x5cS3+JgqpFu3nSoq8DlKkg2ed41k+ptlfOzEWx9gJLL696ixLA==",
+  "dgSpecHash": "9GPF/QPRlHKwt5BR5I4DeKb46CPmO5Y1Cjtlyfv7Jr9ROs9ZXb2ZPthXPQ+nrsK9K0xErhNxF22hTEgakcBYZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Praticascreem\\Praticascreem.iOS\\Praticascreem.iOS.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,8 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\syncfusion.licensing\\18.4.0.35\\syncfusion.licensing.18.4.0.35.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.35\\syncfusion.xamarin.core.18.4.0.35.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",

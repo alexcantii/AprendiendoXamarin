@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jbBkLP2B7loWmHvIVgdg58JrtKQLOew8ddmn4LwFkrb3c/HOqZ0D6skWt2hOjqdwGvvPkul7n6vKWhoUh7INZA==",
+  "dgSpecHash": "+wICyzrB6GXbxNxVsyGK5yB2Cc9EVMB47Ha0mtDytqxI0kuAFxPUT7G3fXPqQNfkyV5WO7zbonQ6JUUrJsp6Ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Praticascreem\\Praticascreem.Android\\Praticascreem.Android.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,8 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.3\\sqlitepclraw.lib.e_sqlite3.android.2.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\syncfusion.licensing\\18.4.0.35\\syncfusion.licensing.18.4.0.35.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.35\\syncfusion.xamarin.core.18.4.0.35.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
