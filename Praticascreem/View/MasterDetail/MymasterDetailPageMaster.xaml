@@ -4,18 +4,26 @@
              HeightRequest="170"
              x:Class="Praticascreem.View.MasterDetail.MymasterDetailPageMaster"
              Title="Master">
+
+    <NavigationPage.TitleView>
+        <StackLayout
+          Orientation="Horizontal"
+          VerticalOptions="Center"
+          Spacing="10">
+
+            <Label
+               Text="Cambiar Contraseña"
+               FontSize="18"
+               TextColor="White"
+               VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView> 
     <StackLayout>
-
-
-        
-
-
+        <StackLayout>
             <ListView x:Name="MenuItemsListView" SeparatorVisibility="None" HasUnevenRows="true" ItemsSource="{Binding MenuItems}">
                 <ListView.Header>
                     <StackLayout  VerticalOptions="FillAndExpand" Padding="0" Margin="0,0,0,25" >
-                        <StackLayout Padding="5,5" Orientation="Horizontal"   WidthRequest="300"  HeightRequest="50"  BackgroundColor="White">
-                           
-                            
+                        <StackLayout Padding="10,10" Orientation="Horizontal"   WidthRequest="300"  HeightRequest="50"  BackgroundColor="White">
                             <ImageButton Source="usericon.png" BackgroundColor="Transparent" HeightRequest="55" VerticalOptions="Center"  HorizontalOptions="Start" Padding="5,5"/>
                             <Label Text="Alexander Cantillo " Font="Montserrat-Medium.otf" TextColor="Black" FontAttributes="Bold" FontSize="17" VerticalOptions="Center" HorizontalOptions="Start"  />
                         </StackLayout>
@@ -40,8 +48,9 @@
                 </ListView.ItemTemplate>
             </ListView>
             <StackLayout Orientation="Vertical" Padding="0" VerticalOptions="FillAndExpand">
-                <Frame BackgroundColor="#3F51B5" HasShadow="{OnPlatform Android=true, iOS=false}" CornerRadius="0"/>
+                <Frame BackgroundColor="#157545" HasShadow="{OnPlatform Android=true, iOS=false}" CornerRadius="0"/>
             </StackLayout>
         </StackLayout>
-  
+    </StackLayout>
+
 </ContentPage>

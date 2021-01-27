@@ -2,15 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Praticascreem.View.LoginPage" BackgroundColor="White">
+    <NavigationPage.TitleView>
+        <StackLayout
+          Orientation="Horizontal"
+          VerticalOptions="Center"
+          Spacing="10">
+
+            <Label
+               Text="Iniciar Sesion"
+               FontSize="18"
+               TextColor="White"
+               VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <ScrollView>
+      
         <StackLayout Margin="30.0" Padding="0">
             
             <StackLayout>
                 
                 <Label Text="INICIAR SESION" HorizontalOptions="Center" Padding="40"  FontSize="30" FontAttributes="Bold"/>
 
-                <Image Source="Usuario" WidthRequest="120" BackgroundColor="Transparent"></Image>
+                <Image Source="Usuario" WidthRequest="110" BackgroundColor="Transparent"></Image>
 
 
                     <Label Text="Digite su Usuario y Contraseña" HorizontalOptions="Center" Padding="20" FontSize="Medium"/>
@@ -86,6 +99,6 @@
 
             </StackLayout>
         </StackLayout>
-        </ScrollView>
+     
     </ContentPage.Content>
 </ContentPage>

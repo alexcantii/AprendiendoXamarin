@@ -33,8 +33,12 @@ namespace Praticascreem.View.MasterDetail
             {
                 MenuItems = new ObservableCollection<MymasterDetailPageMasterMenuItem>(new[]
                 {
-                    new MymasterDetailPageMasterMenuItem { Id = 0, Title = "Page 1", TargetType = typeof(LoginPage ),Icono = "ic_action_build.png" },
-                    new MymasterDetailPageMasterMenuItem { Id = 1, Title = "Page 2", TargetType = typeof(RegisterPage ),Icono = "ic_action_build.png" },
+                    new MymasterDetailPageMasterMenuItem { Id = 0, Title = "Iniciar Sesion", TargetType = typeof(LoginPage), Icon = "editar.png" },
+                    new MymasterDetailPageMasterMenuItem { Id = 1, Title = "Registro Cargue", TargetType = typeof(CarrosPage), Icon = "editar.png" },
+                   new MymasterDetailPageMasterMenuItem { Id = 2, Title = "Actualizacion de datos", TargetType = typeof(EditarPage), Icon = "editar.png" },
+                    new MymasterDetailPageMasterMenuItem { Id = 3, Title = "Actualizar Contraseña", TargetType = typeof(CambiarContraseña), Icon = "editar.png" },
+                    new MymasterDetailPageMasterMenuItem { Id = 4, Title = "Mostrar Datos", TargetType = typeof(MostrarUsuarios), Icon = "editar.png" },
+
 
 
                 });
