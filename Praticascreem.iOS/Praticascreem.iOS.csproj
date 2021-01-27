@@ -171,4 +171,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\insertarimagen.png" />
+  </ItemGroup>
 </Project>
