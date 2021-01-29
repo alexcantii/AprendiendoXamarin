@@ -128,28 +128,6 @@ namespace Praticascreem.ViewModel
 
 
 
-            if (PasswordTxt != RepetircontrasenaTXT)
-            {
-
-                await Application.Current.MainPage.DisplayAlert("Error", " Las contraseñas no coinciden", "Acceptar");
-
-                return;
-
-            }
-            else
-            {
-
-                if (PasswordTxt == RepetircontrasenaTXT)
-                {
-
-
-
-
-
-
-
-
-
 
 
                     var user = new User
@@ -206,5 +184,4 @@ namespace Praticascreem.ViewModel
         }
 
 
-    }
-}
+    

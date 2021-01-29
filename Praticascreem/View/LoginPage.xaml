@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Praticascreem.View.LoginPage" BackgroundColor="White" Title="INICIAR SESION">
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              mc:Ignorable="d"
+             x:Class="Praticascreem.View.LoginPage" BackgroundColor="White" Title="INICIAR SESION"
+              xmlns:local="clr-namespace:Praticascreem">
+
 
     <ContentPage.Content>
        
@@ -21,8 +26,26 @@
 
                 <Label Text=" Contraseña" VerticalOptions="Center"/>
 
-                <Entry  x:Name="PasswordTxt" IsPassword="True" Placeholder="*************"  Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-            
+                <Grid>
+
+                    <Entry Placeholder="Digite su contraseña  ..."  VerticalOptions="Center" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"
+       IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"/>
+
+                    <ImageButton VerticalOptions="Center"
+               HeightRequest="20"
+               HorizontalOptions="End"
+               Source="ic_eye_hide">
+                        <ImageButton.Triggers>
+                            <EventTrigger Event="Clicked">
+                                <local:ShowPasswordTriggerAction ShowIcon="ic_eye"
+                                                              HideIcon="ic_eye_hide"
+                                                              x:Name="ShowPasswordActualTrigger"/>
+                            </EventTrigger>
+                        </ImageButton.Triggers>
+                    </ImageButton>
+
+
+                </Grid>
 
             </StackLayout>
             

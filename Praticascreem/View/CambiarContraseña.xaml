@@ -4,7 +4,8 @@
               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
               mc:Ignorable="d"
-             x:Class="Praticascreem.View.CambiarContraseña" BackgroundColor="White">
+             x:Class="Praticascreem.View.CambiarContraseña" BackgroundColor="White"
+             xmlns:local="clr-namespace:Praticascreem">
 
   
     <ContentPage.Content>
@@ -30,17 +31,33 @@
 
                 <Entry x:Name="EmailTxt" Keyboard="Email" Placeholder="sample@email.com"  FontSize="15" VerticalOptions="Center" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
 
+               
 
                 <Label Text=" Contraseña" VerticalOptions="Center"/>
 
-                <Entry  IsPassword="True" Placeholder="Digite su Contraseña ..." VerticalOptions="Center" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"></Entry>
+                <Grid>
+                    <Entry Placeholder="Digite su contraseña  ..."  VerticalOptions="Center" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"
+       IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"/>
 
 
+                    <ImageButton VerticalOptions="Center"
+               HeightRequest="20"
+               HorizontalOptions="End"
+               Source="ic_eye_hide">
+                        <ImageButton.Triggers>
+                            <EventTrigger Event="Clicked">
+                                <local:ShowPasswordTriggerAction ShowIcon="ic_eye"
+                                                              HideIcon="ic_eye_hide"
+                                                              x:Name="ShowPasswordActualTrigger"/>
+                            </EventTrigger>
+                        </ImageButton.Triggers>
+                    </ImageButton>
 
-                <Label Text=" Repita Contraseña" VerticalOptions="Center"/>
+                    <!--<Entry  IsPassword="True" Placeholder="Digite su Contraseña ..." VerticalOptions="Center" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"></Entry>-->
 
-                <Entry  IsPassword="True" Placeholder="Repita  su Contraseña ..." VerticalOptions="Center" Text="{Binding RepetircontrasenaTXT,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"></Entry>
+</Grid>
 
+              
             </StackLayout>
 
 

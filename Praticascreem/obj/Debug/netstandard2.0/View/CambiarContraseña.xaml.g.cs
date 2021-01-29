@@ -20,9 +20,13 @@ namespace Praticascreem.View {
         private global::Xamarin.Forms.Entry EmailTxt;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Praticascreem.ShowPasswordTriggerAction ShowPasswordActualTrigger;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CambiarContraseña));
             EmailTxt = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "EmailTxt");
+            ShowPasswordActualTrigger = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Praticascreem.ShowPasswordTriggerAction>(this, "ShowPasswordActualTrigger");
         }
     }
 }
