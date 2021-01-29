@@ -9,7 +9,7 @@
 
   <item>
 
-    <bitmap android:src="@drawable/logo"
+    <bitmap android:src="@drawable/PRUEBA1223"
             
      android:tileMode="disabled"
      android:gravity="center"/>

@@ -25,6 +25,7 @@ namespace Praticascreem.ViewModel
         public bool isRunning;
         public bool isVisible;
         public bool isEnabled;
+     
         #endregion
 
         #region Constructor
@@ -80,7 +81,7 @@ namespace Praticascreem.ViewModel
 
 
 
-
+     
 
 
 

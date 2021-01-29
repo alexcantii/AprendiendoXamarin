@@ -1,104 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Praticascreem.View.LoginPage" BackgroundColor="White">
-    <NavigationPage.TitleView>
-        <StackLayout
-          Orientation="Horizontal"
-          VerticalOptions="Center"
-          Spacing="10">
+             x:Class="Praticascreem.View.LoginPage" BackgroundColor="White" Title="INICIAR SESION">
 
-            <Label
-               Text="Iniciar Sesion"
-               FontSize="18"
-               TextColor="White"
-               VerticalTextAlignment="Center" />
-        </StackLayout>
-    </NavigationPage.TitleView>
     <ContentPage.Content>
-      
-        <StackLayout Margin="30.0" Padding="0">
+       
+        <StackLayout Padding="5">
+            <Label FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" Text="INICIAR SESION"/>
+
+            <Image Source="Usuario" WidthRequest="120" VerticalOptions="CenterAndExpand"></Image>
+
+
+
+                <StackLayout Margin="10" VerticalOptions="CenterAndExpand">
+
+                    
+                    <Label   Text="E-Mail"  VerticalOptions="Center"/>
+
+                <Entry x:Name="EmailTxt" Keyboard="Email" Placeholder="sample@email.com" FontSize="15" VerticalOptions="Center" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
+
+                <Label Text=" Contraseña" VerticalOptions="Center"/>
+
+                <Entry  x:Name="PasswordTxt" IsPassword="True" Placeholder="*************"  Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
             
-            <StackLayout>
-                
-                <Label Text="INICIAR SESION" HorizontalOptions="Center" Padding="40"  FontSize="30" FontAttributes="Bold"/>
 
-                <Image Source="Usuario" WidthRequest="110" BackgroundColor="Transparent"></Image>
-
-
-                    <Label Text="Digite su Usuario y Contraseña" HorizontalOptions="Center" Padding="20" FontSize="Medium"/>
-
-                </StackLayout>
-
-
+            </StackLayout>
+            
           
-            <Grid>
-
-               
-                <Grid.RowDefinitions>
-                        <RowDefinition Height="70"/>
-                      
-                        
+           
 
 
-                    </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
+              
+        <StackLayout Orientation="Horizontal" Margin="10,0" VerticalOptions="CenterAndExpand">
+            <Label HorizontalOptions="StartAndExpand" Text=" Remmberme on this device" VerticalOptions="Center"></Label>
+                <Switch HorizontalOptions="End">
 
-                  
-                 
-                     <ColumnDefinition Width="10*"/>
-                       <ColumnDefinition Width="90*"/>
-
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="usericon.png" Grid.Row="0" Grid.Column="0"/>
-
-                    <Entry x:Name="EmailTxt" Keyboard="Email" Placeholder="sample@email.com"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" FontSize="15" VerticalOptions="Center" Text="{Binding EmailTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-                   
-                </Grid>
-
-                <Grid>
-
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="70"/>
-
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-
-                        <ColumnDefinition Width="10*"/>
-                        <ColumnDefinition Width="90*"/>
-                    </Grid.ColumnDefinitions>
-                    <Image Source="contrasena.jpg" Grid.Row="0" Grid.Column="0"/>
-
-                    <Entry  x:Name="PasswordTxt" IsPassword="True" Placeholder="*************"  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" VerticalOptions="Center" Text="{Binding PasswordTxt,Mode=TwoWay}" IsEnabled="{Binding IsEnabledTxt}"/>
-                </Grid>
-
-
-                <StackLayout Margin="30.0">
-                 
-                    <Label  Text="¿Olvidate tu contraseña?" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontSize="20"  TextColor="DarkGray">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGesturecognizer_Tapped">
-                            </TapGestureRecognizer>
-                        </Label.GestureRecognizers>
-                    </Label>
-
-                </StackLayout>
-
-
-
-
-
-                <StackLayout Margin="30.0">
-
-                <Button Command = "{Binding LoginCommand}"  Text="Login" BorderRadius="23"  Background="#17a2b8" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt}" TextColor="white" HeightRequest="46"></Button>
-
-                    <Button Text = "Crear una cuenta" BorderRadius="23"  Background="#007bff" HorizontalOptions="FillAndExpand" IsEnabled="{Binding IsEnabledTxt2}"   TextColor="white" HeightRequest="46"  Clicked="Registrar_Cliked"></Button>
+                </Switch>
 
 
             </StackLayout>
+
+            <StackLayout Margin="10" VerticalOptions="CenterAndExpand">
+
+                <Label  Text="¿Olvidate tu contraseña?" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontSize="20"  TextColor="DarkGray">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGesturecognizer_Tapped">
+                        </TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+
+
+
+            <StackLayout Margin="30.0" Orientation="Horizontal" VerticalOptions="Center">
+
+                <Button Command = "{Binding LoginCommand}"  BackgroundColor="Navy" HeightRequest="46" HorizontalOptions="FillAndExpand" BorderRadius="23"  Text="Iniciar Session"  TextColor="White" ></Button>
+
+                <Button  BackgroundColor="Purple" HeightRequest="46" HorizontalOptions="FillAndExpand" BorderRadius="23"  Text="Crear cuenta"  TextColor="White"  Clicked="Registrar_Cliked" ></Button>
+
+
+
+
+            </StackLayout>
+
+
         </StackLayout>
-     
+       
+
     </ContentPage.Content>
 </ContentPage>

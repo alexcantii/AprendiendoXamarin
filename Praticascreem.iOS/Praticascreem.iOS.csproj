@@ -177,4 +177,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\camara.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\carro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\useriologo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon_TodoList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cerrarsesion.png" />
+  </ItemGroup>
 </Project>

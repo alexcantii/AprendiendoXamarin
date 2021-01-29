@@ -5,73 +5,50 @@
             x:Class="Praticascreem.View.Starpage"
            
              BackgroundColor="White">
-    <NavigationPage.TitleView>
-        <StackLayout
-          Orientation="Horizontal"
-          VerticalOptions="Center"
-          Spacing="10">
-
-            <Label
-               Text="Bulkmatic Colombia"
-               FontSize="18"
-               TextColor="White"
-               VerticalTextAlignment="Center" />
-        </StackLayout>
-    </NavigationPage.TitleView>
+ 
+   
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <ScrollView>
-            <Grid>
+
+        <StackLayout Padding="5">
+
+            <StackLayout Margin="0,0,0,20">
+                <Image Source="Logo.png" HeightRequest="80" VerticalOptions="CenterAndExpand"></Image>
+
+            </StackLayout>
+
+
+
+
+            <StackLayout Margin="30.0" VerticalOptions="CenterAndExpand">
+                <Label Text="Welcome to" TextColor="#333333" FontSize="16" FontAttributes="None" HorizontalOptions="Center"/>
+                <Label Text="Bulkmatic Colombia" TextColor="#333333" FontSize="15" FontAttributes="None" HorizontalOptions="Center"/>
+
+            </StackLayout>
+
+
+            <StackLayout Margin="60.0" VerticalOptions="CenterAndExpand" >
+
+
+                <Button Text="Register"  TextColor="#333333" BackgroundColor="White" BorderWidth="1" BorderColor="Gray" FontSize="10" Clicked="Button_Clicked"/>
+
+
+                <Button Text="Do you have account?"   TextColor="#333333" BackgroundColor="White" BorderWidth="1" BorderColor="Gray" FontSize="10" Clicked="Button_Clicked_1"/>
+
+               
+            </StackLayout>
+
+
+            <StackLayout Margin="30.0" VerticalOptions="EndAndExpand">
+
+                <Label Text="c 2021 Bulkmatic Colombia , All Reingths Reserved" TextColor="#333333" FontSize="10" HorizontalOptions="Center"/>
+
+            </StackLayout>
 
             
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
 
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                  
-
-                <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Margin="0,0,0,20">
-                    <Image Source="Logo.png" HeightRequest="250" WidthRequest="250"/>
-                </StackLayout>
-
-                <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="1">
-
-                    <Label Text="Welcome to" TextColor="#333333" FontSize="16" FontAttributes="None" HorizontalOptions="Center"/>
-                    <Label Text="Bulkmatic Colombia" TextColor="#333333" FontSize="15" FontAttributes="None" HorizontalOptions="Center"/>
-                </StackLayout>
-
-                <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" Spacing="10">
-
-                    <Frame Padding="0,4,0,4" HasShadow="True">
-
-                        <Button Text="Register" HeightRequest="35" WidthRequest="185" TextColor="#333333" BackgroundColor="White" FontSize="10" Clicked="Button_Clicked"/>
-                    </Frame>
-
-
-                    <Frame Padding="0,4,0,4" HasShadow="True">
-
-                        <Button Text="Do you have account?" HeightRequest="35" WidthRequest="185" TextColor="#333333" BackgroundColor="White" FontSize="10" Clicked="Button_Clicked_1"/>
-                    </Frame>
-                    
-                    
-                    
-                </StackLayout>
-
-                <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="4">
-
-                    <Label Text="c 2021 Bulkmatic Colombia , All Reingths Reserved" TextColor="#333333" FontSize="10" HorizontalOptions="Center"/>
-                    
-                </StackLayout>
                 
-            </Grid>
-            </ScrollView>
+       
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

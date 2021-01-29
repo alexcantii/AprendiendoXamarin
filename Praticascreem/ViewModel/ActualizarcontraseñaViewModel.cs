@@ -19,6 +19,7 @@ namespace Praticascreem.ViewModel
         #region Attributes
         public string email;
         public string password;
+        public string repetircontrasena;
 
 
 
@@ -42,6 +43,19 @@ namespace Praticascreem.ViewModel
 
             set { SetValue(ref this.password, value); }
         }
+
+
+
+        public string RepetircontrasenaTXT
+
+        {
+            get { return repetircontrasena; }
+
+            set { SetValue(ref this.repetircontrasena, value); }
+
+
+        }
+
 
         #endregion
 
@@ -91,45 +105,99 @@ namespace Praticascreem.ViewModel
             if (string.IsNullOrEmpty(this.PasswordTxt))
             {
 
-                await Application.Current.MainPage.DisplayAlert("Error", "You mus enter Password.", "Accept");
+                await Application.Current.MainPage.DisplayAlert("Error", "You mus enter Password.", "Acceptar");
                 return;
 
 
             }
 
 
-            #endregion
-
-
-            var user = new User
+            if (string.IsNullOrEmpty(this.RepetircontrasenaTXT))
             {
 
-                Email = EmailTxt.ToLower(),
-                Password = PasswordTxt.ToLower(),
-              
-            };
+                await Application.Current.MainPage.DisplayAlert("Error", "You mus enter Password.", "Acceptar");
+                return;
 
 
-
-            //if (user.Id == 0)
-            //{
-
-            //    await Application.Current.MainPage.DisplayAlert("Usuario no encontrado", "ok", "Aceptar");
-
-            //    await Application.Current.MainPage.Navigation.PushAsync(new EditarPage());
-
-            //    return;
-           //}
-
-            await App.Database.SaveUserAsync(user);
-
-
-            await Application.Current.MainPage.DisplayAlert("Datos Actualizados", "Bien echo", "Acectar");
+            }
 
 
 
 
-            await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
+
+
+
+
+            if (PasswordTxt != RepetircontrasenaTXT)
+            {
+
+                await Application.Current.MainPage.DisplayAlert("Error", " Las contraseñas no coinciden", "Acceptar");
+
+                return;
+
+            }
+            else
+            {
+
+                if (PasswordTxt == RepetircontrasenaTXT)
+                {
+
+
+
+
+
+
+
+
+
+
+
+                    var user = new User
+                    {
+
+                        Email = EmailTxt.ToLower(),
+                        Password = PasswordTxt.ToLower(),
+
+                    };
+
+
+                    //if (user.Id != 0)
+                    //{
+                        
+                    //}
+                    //else {
+                    //    await Application.Current.MainPage.DisplayAlert("Usuario no encontrado", "ok", "Aceptar");
+
+                    //    await Application.Current.MainPage.Navigation.PushAsync(new CambiarContraseña());
+
+                    //    return;
+                    //}
+
+
+                    await App.Database.SaveUserAsync(user);
+
+
+                    await Application.Current.MainPage.DisplayAlert("Datos Actualizados", "Bien echo", "Acectar");
+
+
+
+
+                    await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
+
+
+                }
+
+                #endregion
+
+
+
+
+
+
+
+
+            }
+
 
 
 
@@ -138,11 +206,5 @@ namespace Praticascreem.ViewModel
         }
 
 
-
-
     }
-
-
-
 }
-

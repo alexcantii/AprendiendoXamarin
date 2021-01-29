@@ -42,7 +42,7 @@ namespace Praticascreem.Data
         public async Task<List<User>> GetUsersfiltro()
         {
 
-            return await _database.QueryAsync<User>("Select * From User WHERE Id =1 '" );
+            return await _database.QueryAsync<User>("Select * From User " );
 
         }
         #endregion
